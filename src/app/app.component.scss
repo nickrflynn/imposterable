@@ -1,0 +1,71 @@
+.active {
+    color: orange;
+}
+
+span {
+    margin: 25px;
+}
+
+button {
+    margin-right: 5px;
+}
+
+$left-margin: 30px;
+$left: 200px;
+
+.page {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+
+    nav {
+        position: fixed;
+        width: $left;
+        background-color: #0C2036;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        color: white;
+        box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.255);
+
+        ul {
+            padding: 0 $left-margin;
+            list-style: none;
+
+            li {
+                margin: 20px 0;
+
+                a {
+                  text-decoration: none;
+                  color: white;
+                  
+                  &:focus, &:hover, &:active {
+                      color: #1971CF;
+                  }
+
+                  &.active {
+                      color: #f7832b;
+                  }
+                }
+            }
+        }
+
+        .copyright {
+            position: absolute;
+            bottom: 20px;
+            left: $left-margin;
+            color: #609cdd;
+            font-size: .75rem;
+        }
+    }
+
+    .content {
+        position: absolute;
+        padding: 30px 50px;
+        left: $left;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+}

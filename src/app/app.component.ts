@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as feather from 'feather-icons';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
+  public date: number;
+
+  constructor() {
+    this.date = Date.now();
+    feather.replace();
+  }
 }

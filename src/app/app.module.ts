@@ -6,10 +6,11 @@ import { MatToolbarModule, MatButtonModule, MatCardModule, MatChipsModule } from
 
 import { AppRoutingModule } from './app-routing.module';
 import { FeatherIconsModule } from './feather-icons/feather-icons.module';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
+import { ConnectComponent } from './connect/connect.component';
 import { ProjectsComponent } from './projects/projects.component';
 
 
@@ -17,7 +18,7 @@ import { ProjectsComponent } from './projects/projects.component';
   declarations: [
     AppComponent,
     AboutComponent,
-    ContactComponent,
+    ConnectComponent,
     ProjectsComponent
   ],
   imports: [
@@ -25,6 +26,7 @@ import { ProjectsComponent } from './projects/projects.component';
     AppRoutingModule,
     FeatherIconsModule,
     BrowserAnimationsModule,
+    AngularFontAwesomeModule,
     MatToolbarModule,
     MatButtonModule,
     MatCardModule,

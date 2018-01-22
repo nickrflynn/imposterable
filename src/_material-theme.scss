@@ -1,0 +1,74 @@
+@import '~@angular/material/theming';
+
+$md-lightorange: (
+    50 : #fef5e5,
+    100 : #fde5be,
+    200 : #fcd492,
+    300 : #fbc266,
+    400 : #fab546,
+    500 : #f9a825,
+    600 : #f8a021,
+    700 : #f7971b,
+    800 : #f68d16,
+    900 : #f57d0d,
+    A100 : #ffffff,
+    A200 : #fff5ec,
+    A400 : #ffd8b9,
+    A700 : #ffcaa0,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$md-white: (
+    50 : #ffffff,
+    100 : #fefefe,
+    200 : #fdfdfd,
+    300 : #fcfcfc,
+    400 : #fcfcfc,
+    500 : #fbfbfb,
+    600 : #fafafa,
+    700 : #fafafa,
+    800 : #f9f9f9,
+    900 : #f8f8f8,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #ffffff,
+    A700 : #ffffff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+@include mat-core();
+$theme-primary: mat-palette($md-white);
+$theme-accent:  mat-palette($md-lightorange);
+$theme-warn: mat-palette($mat-red);
+$theme: mat-light-theme($theme-primary, $theme-accent, $theme-warn);
+@include angular-material-theme($theme);

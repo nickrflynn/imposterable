@@ -1,0 +1,7 @@
+{
+    // Make it easy to distiguish VS Code windows
+    "workbench.colorTheme": "Default Dark+",
+    "workbench.colorCustomizations": {
+        "terminal.background": "#181818"
+    }
+}

@@ -7,8 +7,11 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: whitesmoke;
-
     font-family: 'Roboto', sans-serif;
+}
+
+main {
+    min-height: calc(100vh - 195px);
 }
 
 $x-margin-xl: 250px;
@@ -24,6 +27,10 @@ mat-card {
     margin: 25px $x-margin-xl;
 }
 
+footer {
+    margin: 0px $x-margin-xl;
+}
+
 @media only screen and (max-width: 1200px) {
     mat-toolbar {
         padding: 0 $x-margin-lg !important;
@@ -31,6 +38,10 @@ mat-card {
     
     mat-card {
         margin: 25px $x-margin-lg;
+    }
+
+    footer {
+        margin: 0px $x-margin-lg;
     }
 }
 
@@ -42,6 +53,10 @@ mat-card {
     mat-card {
         margin: 25px $x-margin-md;
     }
+
+    footer {
+        margin: 0px $x-margin-md;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -51,5 +66,9 @@ mat-card {
     
     mat-card {
         margin: 25px $x-margin-sm;
+    }
+
+    footer {
+        margin: 0px $x-margin-sm;
     }
 }

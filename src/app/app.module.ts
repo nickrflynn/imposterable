@@ -3,30 +3,29 @@ import { NgModule } from '@angular/core';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule, MatButtonModule, MatCardModule, MatChipsModule } from '@angular/material';
-
-import { AppRoutingModule } from './app-routing.module';
-import { FeatherIconsModule } from './feather-icons/feather-icons.module';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
+import { AppRoutingModule } from './app-routing.module';
+import { SharedModule } from './shared/shared.module';
+
 import { AppComponent } from './app.component';
-import { AboutComponent } from './about/about.component';
-import { ConnectComponent } from './connect/connect.component';
-import { ProjectsComponent } from './projects/projects.component';
 import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
+import { CardComponent } from './shared/card/card.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent,
-    ConnectComponent,
-    ProjectsComponent,
-    FooterComponent
+    FooterComponent,
+    HeaderComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FeatherIconsModule,
+    SharedModule,
     BrowserAnimationsModule,
     AngularFontAwesomeModule,
     MatToolbarModule,

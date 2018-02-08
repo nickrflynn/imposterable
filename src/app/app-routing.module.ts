@@ -1,26 +1,40 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AboutComponent } from './about/about.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { ConnectComponent } from './connect/connect.component';
+
+import { HomeComponent } from './home/home.component';
+import { CheatsheetsModule } from './cheatsheets/cheatsheets.module';
+import { BiographiesModule } from './biographies/biographies.module';
+import { CheatsheetsComponent } from './cheatsheets/cheatsheets.component';
+import { BiographiesComponent } from './biographies/biographies.component';
 
 const routes: Routes = [
-  {
-    path: 'about',
-    component: AboutComponent
-  },
-  {
-    path: 'projects',
-    component: ProjectsComponent
-  },
-  {
-    path: 'connect',
-    component: ConnectComponent
-  }
+    {
+        path: '',
+        redirectTo: 'home',
+        pathMatch: 'full'
+    },
+    {
+        path: 'home',
+        component: HomeComponent
+    },
+    {
+        path: 'cheatsheets',
+        component: CheatsheetsComponent
+    },
+    {
+        path: 'biographies',
+        component: BiographiesComponent
+    }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+    imports: [
+        RouterModule.forRoot(routes),
+        CheatsheetsModule,
+        BiographiesModule
+    ],
+    exports: [
+        RouterModule
+    ]
 })
 export class AppRoutingModule { }
